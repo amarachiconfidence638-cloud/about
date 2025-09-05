@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Company Website</title>
+<style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h4 {
+  color: #222;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item a:hover {
+  color: #ff9800;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.buy-button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background: #e68900;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #555;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+   <header id="header">
+      <nav>
+         <ul class="nav-items">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main id="main-content">
+      <h1>Welcome To Confidence Amarachi's page</h1>
+      <p>This is a description of what the company is all about</p>
+
+      <article>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui, perspiciatis, 
+            eveniet incidunt illum ab officiis similique cupiditate voluptas impedit reprehenderit harum,
+            ipsam dolor repellat earum deserunt. A, dignissimos quos?
+         </p>
+      </article>
+
+      <!-- Product Section -->
+      <section class="product-card">
+         <h4>Product Title</h4>
+         <p>
+            Product description goes here. It should be concise and informative, giving potential 
+            customers a clear idea of what the product is about.
+         </p>
+         <p>Price: $XX.XX</p>
+         <button class="buy-button">Buy Now</button>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+         <h2>Contact Us</h2>
+         <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+         </form>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer id="footer">
+      <p>&copy; 2025 My Company</p>
+      <p>Follow us on
+         <a href="#">Twitter</a>,
+         <a href="#">Facebook</a>,
+         <a href="#">Instagram</a>
+      </p>
+   </footer>
+
+</body>
+</html>
